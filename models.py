@@ -42,7 +42,7 @@ class Player:
         self.lives -= 1
         if self.lives == 0:
             print(f"Your number of scores {self.score}")
-            for_write_scores = open("C:\\Users\Я\PycharmProjects\pythonProject4\master\scores.txt", 'a+')
+            for_write_scores = open("scores.txt", 'a+')
             for_write_scores.write(f"{self.name}: points {self.score}\n")
             for_write_scores.close()
             raise GameOver
